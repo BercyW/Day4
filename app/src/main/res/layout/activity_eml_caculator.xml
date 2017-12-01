@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="security.bercy.com.day4.EmlCaculator">
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Principal Amount($)"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/money_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:max="999999"
+        android:progress="100"
+        />
+
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Interest Rate(%)"
+        android:textSize="20sp" />
+
+
+    <SeekBar
+        android:id="@+id/rate_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:max="50"
+        android:progress="1"
+        />
+
+
+    <TextView
+        android:id="@+id/years"
+        android:paddingTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Years"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/years_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_marginTop="21dp"
+        android:max="60"
+        android:progress="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:paddingTop="50dp"
+        android:textSize="40dp"
+        android:gravity="right"
+        android:id="@+id/show"
+        />
+
+
+</LinearLayout>
