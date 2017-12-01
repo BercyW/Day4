@@ -32,6 +32,9 @@ public class ManPage extends AppCompatActivity {
 
                 break;
             case R.id.btn_Person:
+                Intent intent2 = new Intent(this,AddPerson.class);
+                startActivity(intent2);
+
                 break;
 
 
